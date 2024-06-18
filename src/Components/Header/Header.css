@@ -5,3 +5,16 @@ header{
     padding: 10px;
     background-color: aqua;
 }
+
+.ser{
+    position: absolute;
+    top: 30;
+    left: 20px;
+    height: 330px;
+    width: 120px;
+    background-color: red;
+}
+
+.search{
+    position: relative;
+}

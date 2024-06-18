@@ -1,20 +1,17 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import CauntryCart from "../Components/Header/CountryCart/CauntryCart";
+import './pages.css';
 
 const Home = ({ countries }) => {
   return (
     <div>
+      <div className="home-block">
       {countries.map((elem) => {
         return (
-          <div>
-            <h4>{elem.name.common}</h4>
-            <NavLink to={`/${elem.name.common}`}>
-
-              <img src={elem.flags.png} />
-            </NavLink>
-          </div>
+          <CauntryCart key ={elem.name.common} elem ={elem}/>
         );
       })}
+      </div>
     </div>
   );
 };

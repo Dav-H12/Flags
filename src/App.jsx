@@ -14,7 +14,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Header />
+      <Header dispatch={dispatch} text={state.text}/>
       <Routes>
         <Route path="/" element={<Home countries={state.countries}/>} />
         <Route path="/:name" element={<AboutOneCountry dispatch={dispatch} state={state}/>}/>

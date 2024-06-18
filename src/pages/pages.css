@@ -1,0 +1,14 @@
+.home-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.cart{
+    width: 300px;
+    border: 0.5px solid black;
+    border-radius: 20px;
+    padding: 30px;
+}
